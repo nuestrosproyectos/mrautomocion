@@ -1,0 +1,3 @@
+# Vista previa: no indexar (la web buena es https://mrautomocion.com)
+User-agent: *
+Disallow: /

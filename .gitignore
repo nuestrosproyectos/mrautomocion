@@ -1,0 +1,16 @@
+# Copia de seguridad de la web antigua: no hace falta publicarla
+original/
+.descargas/
+
+# Material de trabajo de los vídeos y las ampliaciones
+*-crudo.mp4
+hero-4k.png
+hero-16-9.jpg
+box-16-9.jpg
+comprobar-*.jpg
+qr-movil.png
+
+# Lanzadores y temporales de Windows
+*.bat
+Thumbs.db
+desktop.ini
