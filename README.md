@@ -3,6 +3,17 @@
 Web estática (HTML puro): carga muy rápido, se puede subir a cualquier hosting y no se rompe.
 Todo el contenido sale de su web actual `mrautomocion.com`.
 
+**Vista previa publicada:** https://nuestrosproyectos.github.io/mrautomocion/
+**Repositorio:** https://github.com/nuestrosproyectos/mrautomocion
+
+> La vista previa está marcada como **no indexable** (`robots.txt` con `Disallow` y etiqueta
+> `noindex` en cada página). Es a propósito: si Google indexara esta copia, competiría contra
+> la web real del cliente con su mismo contenido y perdería él.
+>
+> **Cuando se publique de verdad en `mrautomocion.com`:** abrir `construir-web.py`, poner
+> `VISTA_PREVIA = False` y volver a construir. Eso quita el `noindex` y deja el `sitemap.xml`
+> activo.
+
 ## Ver la web
 
 Doble clic en **`Abrir web.bat`**. Se abre en el navegador en `http://localhost:4832`.
@@ -53,7 +64,15 @@ Para comprobar que no se ha roto nada (con la web abierta):
 python comprobar.py
 ```
 
-## Publicar
+## Subir los cambios a la vista previa de GitHub
+
+```bash
+git add -A && git commit -m "Actualizo el stock" && git push
+```
+
+En un par de minutos se ve en https://nuestrosproyectos.github.io/mrautomocion/
+
+## Publicar en el hosting del cliente
 
 1. Empaquetar con rutas correctas para servidores Linux:
 
